@@ -44,16 +44,16 @@ const   Sidebar = () => {
         <Box
             sx={{
                 "& .pro-sidebar-inner": {
-                    background: `${colors.primary[400]} !important`
+                    background: `${colors.primary[400]} !important`,
                 },
                 "& .pro-icon-wrapper": {
-                    backgroundColor: "transparent !important"
+                    backgroundColor: "transparent !important",
                 },
                 "& .pro-inner-item": {
-                    padding: "5px 35px 5px 20px !important"
+                    padding: "5px 35px 5px 20px !important",
                 },
                 "& .pro-inner-item:hover" : {
-                    color: "#868dfb !important"
+                    color: "#868dfb !important",
                 },
                 "& .pro-menu-item.active" : {
                     color: "#6870fa !important",
@@ -119,6 +119,14 @@ const   Sidebar = () => {
                             selected = {selected}
                             setSelected = {setSelected}
                         />
+
+                        <Typography
+                            variant="h6"
+                            color={colors.grey[300]}
+                            sx={{m: "15px 0  5px 20px"}}
+                            >
+                            Data
+                        </Typography>
                         <Item 
                             title="Manage Team"
                             to="/Team"
@@ -140,6 +148,13 @@ const   Sidebar = () => {
                             selected = {selected}
                             setSelected = {setSelected}
                         />
+                        <Typography
+                            variant="h6"
+                            color={colors.grey[300]}
+                            sx={{m: "15px 0  5px 20px"}}
+                            >
+                            Pages
+                        </Typography>
                         <Item 
                             title="Profile Form"
                             to="/form"
@@ -161,6 +176,13 @@ const   Sidebar = () => {
                             selected = {selected}
                             setSelected = {setSelected}
                         />
+                         <Typography
+                            variant="h6"
+                            color={colors.grey[300]}
+                            sx={{m: "15px 0  5px 20px"}}
+                            >
+                            Charts
+                        </Typography>
                         <Item 
                             title="Bar Chart"
                             to="/bar"
