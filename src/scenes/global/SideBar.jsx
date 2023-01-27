@@ -27,8 +27,8 @@ const Item = ({title, to, icon, selected, setSelected }) =>{
             <Typography>{title}</Typography>
             <Link to={to}/>
         </MenuItem>
-    )
-}
+    );
+};
 
  
 
